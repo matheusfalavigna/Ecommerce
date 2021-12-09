@@ -35,5 +35,5 @@ editar a quantidade do produto,remover o produto ou a quantidade e olhar o preç
 
 ### API Ultilizada
 ```
-Teste
+https://fakestoreapi.com/docs
 ```
