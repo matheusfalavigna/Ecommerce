@@ -1,6 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Basket from '../views/Basket.vue'
+import Product from '../views/Product.vue'
+
+// rotas da API 
 
 const routes = [
   {
@@ -12,6 +15,12 @@ const routes = [
     path: '/basket',
     name: 'Basket',
     component: Basket
+  },
+  
+  {
+    path: '/product',
+    name: 'product',
+    component: Product
   },
   
 ]

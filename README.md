@@ -1,4 +1,4 @@
-# project5-shopping-bag-finished
+# e_commerce_donets
 
 ## Project setup
 ```

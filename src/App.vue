@@ -1,14 +1,23 @@
+
 <template>
   <div id="nav">
     <router-link to="/">Início</router-link> -
-    <router-link to="/basket">Carrinho (0)</router-link> 
+    <router-link to="/basket">Carrinho (0)</router-link> - 
+    <router-link to="/product">Product</router-link> 
   </div>
   <router-view/>
 </template>
 
 <script>
 
+  
   export default {
+    // carregar os dados, fazendo uma requisição get a API fake
+    // invocando a acao de carregar produtos
+
+    created(){
+      this.$store.dispatch('loadProducts');
+    }
 
   }
   
