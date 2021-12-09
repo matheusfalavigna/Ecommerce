@@ -18,7 +18,15 @@ export default createStore({
       // faço o push para o final do array
       state.productsInBag.push(product);
 
-    }
+    },
+    removeFromBag(state, productId){
+      // o metodo filter busca uma condição for satisfeita, ai remove o item
+      //para os produtos que tiverem o ID diferente do passado, ele vai manter na lista
+      var updateBag = state.productsInBag.filter(item => productId != item.id); 
+
+      state.productsInBag = updateBag;
+
+    },
     
   },
   actions: {
@@ -33,9 +41,15 @@ export default createStore({
     addToBag({commit}, product){
       commit('addToBag',product);
 
-    }
+    },
+    // remover os itens do carrinho
+    removeFromBag({commit}, productId){
+      if (confirm("Você realmente quer remover esse item do carrinho?")){
+        commit('removeFromBag',productId);
+        }
+      }
 
-  },
+    },
   modules: {
   }
 })

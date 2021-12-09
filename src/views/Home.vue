@@ -1,10 +1,16 @@
 <template>
   <div class="home">
     <div class="products">
-       <!-- o for usando o vue -->
+       <!-- o for usando o vue
+       adicionando a borda azul quando o intem é selecionado
+        -->
       <div 
         v-for="(product, index) in this.products" :key="index"
-        class="product">
+        class="product"
+        :class="{inBag : isInBag(product)}"
+        >
+
+
         <div class="product-image" :style="{backgroundImage: 'url('+ product.image + ')' }">
         </div>
 

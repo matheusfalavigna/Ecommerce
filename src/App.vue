@@ -2,7 +2,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Início</router-link> -
-    <router-link to="/basket">Carrinho (0)</router-link> - 
+    <router-link to="/basket">Carrinho ({{this.productsInBag.length}})</router-link> - 
     <router-link to="/product">Product</router-link> 
   </div>
   <router-view/>
@@ -17,6 +17,12 @@
 
     created(){
       this.$store.dispatch('loadProducts');
+    },
+    // ela sera craida para pegar os produtos que estao no back
+    computed :{
+      productsInBag(){
+        return this.$store.state.productsInBag;
+      }
     }
 
   }
