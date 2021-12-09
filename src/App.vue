@@ -3,7 +3,7 @@
   <div id="nav">
     <router-link to="/">Início</router-link> -
     <router-link to="/basket">Carrinho ({{this.productsInBag.length}})</router-link> - 
-    <router-link to="/product">Product</router-link> 
+    <router-link to="/admin">Admin</router-link> 
   </div>
   <router-view/>
 </template>

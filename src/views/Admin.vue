@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'Product',
+  name: 'Admin',
 
   methods: {
    

@@ -98,7 +98,7 @@ export default {
         }
 
         &.inBag {
-          border: 1px solid #007bff;
+          border: 1px solid #2ED50C;
         }
         
         .product-image {
@@ -123,8 +123,8 @@ export default {
 
         button {
           color: #fff;
-          background-color: #007bff;
-          border: 1px solid #007bff;
+          background-color: #2ED50C;
+          border: 1px solid #2ED50C;
           border-radius: 100px;
           font-weight: 400;
           text-align: center;
@@ -136,10 +136,14 @@ export default {
           }
 
           &.remove {
-            background-color: transparent;
-            border: none;
-            color: black;
-            text-decoration: underline;
+            color: #fff;
+            background-color: #E51C0B;
+            border: 1px solid #E51C0B;
+            border-radius: 100px;
+            font-weight: 400;
+            text-align: center;
+            padding: 8px 16px;
+            cursor: pointer;
           }
         }
       }
